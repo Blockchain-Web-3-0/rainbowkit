@@ -18,8 +18,8 @@
     "wagmi": "^0.6.6"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
     "typecheck": "pnpm tsc --noEmit"
   },
   "keywords": [],
