@@ -4,6 +4,7 @@
   "description": "Site and docs for RainbowKit.",
   "private": true,
   "dependencies": {
+    "@docsearch/react": "3",
     "@ethersproject/bignumber": "^5.5.1",
     "@ethersproject/providers": "^5.5.1",
     "@radix-ui/react-dialog": "^0.1.7",
@@ -45,8 +46,8 @@
     "wagmi": "^0.6.6"
   },
   "scripts": {
-    "dev": "next dev --port 3001",
-    "build": "INIT_CWD=$PWD next build",
+    "dev": "node api.js && next dev --port 3001",
+    "build": "node api.js && INIT_CWD=$PWD next build",
     "typecheck": "INIT_CWD=$PWD contentlayer build && pnpm tsc --noEmit"
   },
   "keywords": [],

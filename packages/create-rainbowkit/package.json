@@ -12,8 +12,8 @@
     "create-rainbowkit": "dist/cli.js"
   },
   "scripts": {
-    "build": "node build.js",
-    "dev": "node build.js --watch",
+    "build": "node api.js && node build.js",
+    "dev": "node api.js && node build.js --watch",
     "typecheck": "tsc --noEmit",
     "test:setup": "rm -rf generated-test-app && INSTALL_WORKSPACE_RAINBOWKIT=true node ./dist/cli generated-test-app --skip-git",
     "test:dev": "pnpm test:setup && cd generated-test-app && pnpm dev",
