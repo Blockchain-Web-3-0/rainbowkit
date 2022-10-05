@@ -5,9 +5,9 @@
     "polyfills.ts"
   ],
   "scripts": {
-    "build": "remix build",
-    "dev": "PORT=8000 remix dev",
-    "start": "remix-serve build"
+    "build": "node init && remix build",
+    "dev": "node init && PORT=8000 remix dev",
+    "start": "node init && remix-serve build"
   },
   "dependencies": {
     "@ethersproject/providers": "^5.5.1",

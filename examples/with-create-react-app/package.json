@@ -20,9 +20,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "npm run start",
-    "start": "PORT=3030 react-scripts start",
-    "build": "react-scripts build",
+    "dev": "node init && npm run start",
+    "start": "node init && PORT=3030 react-scripts start",
+    "build": "node init && react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!@rainbow-me)/\"",
     "eject": "react-scripts eject"
   },
